@@ -28,7 +28,7 @@ Auto-detects your preferred file format and prevents duplicate entries. Interact
 
    ```bash
    npm install prompts smol-toml toml tsx yaml
-   npm install --save-dev @types/node @types/prompts tailwindcss typescript
+   npm install --save-dev @types/node @types/prompts typescript
    ```
 
 3. **Add script to your package.json:**
