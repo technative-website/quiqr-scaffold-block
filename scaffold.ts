@@ -76,7 +76,7 @@ class ContentBlockScaffolder {
   }
 
   private async createContentFile(): Promise<void> {
-    const contentDir = path.join('quiqr', 'model', 'partials', 'content_blocks');
+    const contentDir = path.join('quiqr', 'model', 'partials');
     const contentFilePath = path.join(contentDir, `${this.blockName}.${this.fileType}`);
 
     this.ensureDirectoryExists(contentDir);
@@ -359,7 +359,7 @@ class ContentBlockScaffolder {
       console.log('---');
       console.log(`✅ Successfully scaffolded content block: ${this.blockName}`);
       console.log('\nFiles created/updated:');
-      console.log(`  • quiqr/model/partials/content_blocks/${this.blockName}.${this.fileType}`);
+      console.log(`  • quiqr/model/partials/${this.blockName}.${this.fileType}`);
       console.log(`  • themes/${this.selectedTheme}/partials/content_blocks/${this.blockNameWithDashes}.html`);
       console.log(`  • quiqr/model/includes/dynamics.${this.fileType}`);
     } catch (error) {
