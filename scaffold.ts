@@ -12,6 +12,8 @@ interface ScaffoldOptions {
 }
 
 interface ContentData {
+  key: string,
+  title: string,
   fields: Array<{
     key: string;
     title: string;
@@ -29,6 +31,7 @@ class ContentBlockScaffolder {
   private blockName: string;
   private blockNameWithoutUnderscores: string;
   private blockNameWithDashes: string;
+  private blockNameWithSpaces: string;
   private fileType: 'yaml' | 'toml' | 'json';
   private selectedTheme!: string;
 
@@ -36,6 +39,7 @@ class ContentBlockScaffolder {
     this.blockName = blockName;
     this.blockNameWithoutUnderscores = blockName.replace(/_/g, '');
     this.blockNameWithDashes = blockName.replace(/_/g, '-');
+    this.blockNameWithSpaces = blockName.replace(/_/g, ' ');
     this.fileType = fileType || this.detectFileType();
   }
 
@@ -82,6 +86,8 @@ class ContentBlockScaffolder {
     this.ensureDirectoryExists(contentDir);
 
     const contentData: ContentData = {
+      key: `dynbx${this.blockNameWithoutUnderscores}`,
+      title: this.blockNameWithSpaces,
       fields: [
         {
           key: "",
