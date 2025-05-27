@@ -22,7 +22,7 @@ Auto-detects your preferred file format and prevents duplicate entries. Interact
 1. **Copy these files to your Hugo project root:**
 
    - `scaffold.ts`
-   - `tsconfig.json` (if you don't have one)
+   - `tsconfig.json` (technically not needed, you can omit this step)
 
 2. **Install dependencies:**
 
