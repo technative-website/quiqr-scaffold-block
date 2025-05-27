@@ -312,7 +312,7 @@ class ContentBlockScaffolder {
     try {
       const selectedTheme = await this.getThemeDirectory();
       this.selectedTheme = selectedTheme;
-      const htmlDir = path.join('themes', selectedTheme, 'partials', 'content_blocks');
+      const htmlDir = path.join('themes', selectedTheme, 'layouts', 'partials', 'content_blocks');
       const htmlFilePath = path.join(htmlDir, `${this.blockNameWithDashes}.html`);
 
       this.ensureDirectoryExists(htmlDir);
