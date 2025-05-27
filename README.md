@@ -27,7 +27,7 @@ Auto-detects your preferred file format and prevents duplicate entries. Interact
 2. **Install dependencies:**
 
    ```bash
-   npm install prompts smol-toml toml tsx yaml
+   npm install prompts smol-toml tsx yaml
    npm install --save-dev @types/node @types/prompts typescript
    ```
 
@@ -55,6 +55,6 @@ Auto-detects your preferred file format and prevents duplicate entries. Interact
 The tool uses these packages:
 
 - `prompts` - Interactive CLI prompts
-- `smol-toml`, `toml` - TOML file handling
+- `smol-toml` - TOML file handling
 - `tsx` - TypeScript execution
 - `yaml` - YAML file handling
