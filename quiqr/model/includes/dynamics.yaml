@@ -1,9 +1,0 @@
-- key: dynbxblocktest2
-  _mergePartial: block_test2
-  content_type: block_test2
-- key: dynbxblocktest23
-  _mergePartial: block_test23
-  content_type: block_test23
-- key: dynbxblocktest233
-  _mergePartial: block_test233
-  content_type: block_test233
